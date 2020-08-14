@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="main__header">
+    <div class="header">
+        <div class="header__container ">
+            <div class="header__top">
+                <div class="header__top-container wrapper">
+                    <ul>
+                        <a href="#"><li>Компания</li></a>
+                        <a href="#"><li>Портфолио</li></a>
+                        <a href="#"><li>Проектирование</li></a>
+                    </ul>
+                    <ul>
+                        <a href="#"><li>Ресторанам</li></a>
+                        <a href="#"><li>Застройщикам</li></a>
+                        <a href="#"><li>Гос.закасчикам</li></a>
+                        <a href="#"><li>Таблет-питание</li></a>
+                    </ul>
+                    <ul>
+                        <a href="#"><li>Сервис</li></a>
+                        <a href="#"><li>Контакты</li></a>
+                        <a href="#" class="header__top-open">
+                            <img src="img/icons/email.png" alt="email">
+                            <li>info@stolovay.ru</li>
+                            <div class="top__open-bnt">Скопировать</div>
+                        </a>
+                        <a href="#" class="header__top-bottom">
+                            <img src="img/icons/telephone.png" alt="telephone">
+                            <li>8 495 790-72-05</li>
+                        </a>
+                            <!--  ----------popup----------  -->
+                            <div class="top__open-contacts hidden">
+                                <div class="contacts__fon"></div>
+                                <div class="contacts__container">
+                                    <div class="contacts__close" id="close">X</div>
+                                    <div class="contacts__toils">
+                                        <div class="toils__title">8 495 790-72-05</div>
+                                        <div class="toils__text">Мы принимаем звонки без выходных</div>
+                                        <div class="toils__way">Выберите способ связи:</div>
+                                        <div class="toils__items">
+                                                <div class="toils__item">
+                                                    <img src="img/icons/telephone-handle.png" alt="contacts">
+                                                    <a href="#">Мобильный</a>
+                                                </div>
+                                                <div class="toils__item">
+                                                    <img src="img/icons/viber.png" alt="contacts">
+                                                    <a href="#">Viber</a>
+                                                </div>
+                                                <div class="toils__item">
+                                                    <img src="img/icons/telegram.png" alt="contacts">
+                                                    <a href="#">Telegram</a>
+                                                </div>
+                                                <div class="toils__item">
+                                                    <img src="img/icons/watc.png" alt="contacts">
+                                                    <a href="#">Whatsapp</a>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="contacts__call">
+                                        <div class="call__title">Обратный звонок:</div>
+                                        <div class="call__tetx">Мы перезвоним вам в течении часа</div>
+                                        <div class="call__row">
+                                            <label for="name" >Имя</label>
+                                            <input type="text" id="name" placeholder="Анна">
+                                        </div>
+                                        <div class="call__row">
+                                            <label for="fon">Телефон:</label>
+                                            <input type="text" id="fon" placeholder="8 495 790-72-05">
+                                        </div>
+                                        <div class="call__btn">Отправить</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ----------/popup----------  -->
+                    </ul>
+                </div>
+            </div>
+            <div class="header__search ">
+                <div class="header__search-container wrapper">
+                    <div class="logo__container"> 
+                        <a href="#">
+                            <div class="logo">
+                                <img src="img/icons/logo.png" alt="logo">
+                            </div>
+                            <div class="logo__text">Столовая.РУ</div>
+                        </a> 
+                    </div>
+                    <div class="search-container">
+                        <div class="search__category">Все</div>
+                        <div class="search__category__buttom"></div>
+                        <div class="search__result">
+                            <input type="">
+                        </div>
+                        <div class="search__btn">
+                            <img src="img/icons/search.png" alt="search">
+                        </div>
+                    </div>
+                    <div class="search__vendor">
+                        <a href="#">
+                        <div class="vendor__logo">
+                            <img src="img/icons/portalpostavschikov.png" alt="portal">
+                        </div>
+                        <div class="vendor__text">Мы на портале поставщиков</div>
+                        </a>  
+                    </div>
+                    <a href="#" class="cart">
+                        <img src="img/icons/online-shopping-cart.png" alt="cart">
+                        <div class="cart__quantity">12</div>
+                        <div class="cart__container">
+                            <div class="cart__sum">Сумма</div>
+                            <span class="cart__price">150 000 руб.</span>
+                        </div>
+                    </a>    
+                </div>
+            </div>
+            
+
+        </div>
+    </div>   
+</div>
+<div id="navbar">
+    <div class="header__categories ">
+        <div class="header__categories-contsiner wrapper">
+            <div class="categories__items">
+                <a href="#">
+                <img src="img/categories/categories_1.png" alt="product">
+                <div class="categories__text">Теплое</div>
+                </a>
+            </div>
+            <div class="categories__items">
+                <a href="#">
+                <img src="img/categories/categories_2.png" alt="product">
+                <div class="categories__text">Холодильное</div>
+                </a>
+            </div>
+            <div class="categories__items">
+                <a href="#">
+                <img src="img/categories/categories_3.png" alt="product">
+                <div class="categories__text">Электромеханическое</div>
+                </a>
+            </div>
+            <div class="categories__items">
+                <a href="#">
+                <img src="img/categories/categories_4.png" alt="product">
+                <div class="categories__text">Посудомоечное</div>
+                </a>
+            </div>
+            <div class="categories__items">
+                <a href="#">
+                <img src="img/categories/categories_5.png" alt="product">
+                <div class="categories__text">Хлебопекарное</div>
+                </a>
+            </div>
+            <div class="categories__items">
+                <a href="#">
+                <img src="img/categories/categories_6.png" alt="product">
+                <div class="categories__text">Линии раздачи</div>
+                </a>
+            </div>
+            <div class="categories__items">
+                <a href="#">
+                <img src="img/categories/categories_7.png" alt="product">
+                <div class="categories__text">Нейтральное</div>
+                </a>
+            </div>
+            <div class="categories__items">
+                <a href="#">
+                <img src="img/categories/categories_8.png" alt="product">
+                <div class="categories__text">Для фаст фуда</div>
+                </a>
+            </div>
+            <div class="categories__items">
+                <a href="#">
+                <img src="img/categories/categories_9.png" alt="product">
+                <div class="categories__text">Для залов</div>
+                </a>
+            </div>
+            <div class="categories__items">
+                <a href="#">
+                <img src="img/categories/categories_10.png" alt="product">
+                <div class="categories__text">Вспомогательные</div>
+                </a>
+            </div>
+            <div class="categories__items">
+                <a href="#">
+                <img src="img/categories/categories_11.png" alt="product">
+                <div class="categories__text">Для магазинов</div>
+                </a>
+            </div>
+        </div>
+    </div>  
+
+</div>
+<div class="header__modile wrapper">
+    <div class="header__modile-container">
+        <div class="header__modile-menu">
+            
+            <div class="header__modile-logo">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <ul>
+                        <a href="#"><li>Компания</li></a>
+                        <a href="#"><li>Портфолио</li></a>
+                        <a href="#"><li>Проектирование</li></a>
+                    </ul>
+                    <ul>
+                        <a href="#"><li>Ресторанам</li></a>
+                        <a href="#"><li>Застройщикам</li></a>
+                        <a href="#"><li>Гос.закасчикам</li></a>
+                        <a href="#"><li>Таблет-питание</li></a>
+                    </ul>
+                    <ul>
+                        <a href="#"><li>Сервис</li></a>
+                        <a href="#"><li>Контакты</li></a>
+                    <ul>
+                </div>
+            <span class="menu__burger" onclick="openNav()">&#9776;</span> 
+                <div class="logo__container">
+                    <a href="#">
+                        <div class="logo">
+                            <img src="img/icons/logo.png" alt="logo">
+                        </div>
+                        <div class="logo__text-container">
+                            <div class="logo__text">Столовая.РУ</div>
+                            <p class="logo__text-mobile">Создание  пищеблоков</p>
+                        </div>
+                        
+                    </a> 
+                </div>
+            </div>
+            <div class="header__modile-row">
+                <div class="header__modile-item">
+                    <img src="img/icons/mob_header_1.png" alt="modile-icon">
+                </div>
+                <div class="header__modile-item">
+                    <img src="img/icons/mob_header_2.png" alt="modile-icon">
+                </div>
+                <div class="header__modile-item">
+                    <a href="#" class="mobile__sum-linc">
+                        <img src="img/icons/mob_header_3.png" alt="modile-icon">
+                        <div class="mobile__sum">12</div>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>    
+</div>
+<div class="navigation">
+    <div class="navigation__container wrapper">
+        <div class="navigation__menu">
+            <div class="menu-container">
+                <div class="menu__title">Целевые предложения</div>
+                <div class="menu__list">
+                    <ul>
+                        <li><a href="#"></a>Целевые предложения</a></li>
+                        <li><a href="#"></a>Кафе, барам, ресторанам</a></li>
+                        <li><a href="#"></a>Таблет-питание</a></li>
+                        <li><a href="#"></a>Для пищеблоков</a></li>
+                        <li><a href="#"></a>Государственным заказам</a></li>
+                        <li><a href="#"></a>Для магазинов</a></li>
+                        <li><a href="#"></a>Для войсковых частей</a></li>
+                        <li><a href="#"></a>Все предложения</a></li>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+       
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="navigation__slider">
+                            <div class="navigation__slider-container">
+                                <div class="slider__title">Портфолио</div>
+                                <div class="slider__name">НИИ скорой помощи им.  Н.В. Склифосовского</div>
+                                <div class="slider__text">Обфрудование для пищеблоков</div>
+                                <div class="slider__btn">
+                                    <a href="#">Подробнее</a>
+                                </div>
+                                <img src="img/slider-foto/slider_1.png" alt="fridge" class="slider__foto">
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="navigation__slider-container">
+                            <div class="slider__title">Портфолио</div>
+                            <div class="slider__name">НИИ скорой помощи им.  Н.В. Склифосовского</div>
+                            <div class="slider__text">Обфрудование для пищеблоков</div>
+                            <div class="slider__btn">
+                                <a href="#">Подробнее</a>
+                            </div>
+                            <img src="img/slider-foto/slider_1.png" alt="fridge" class="slider__foto">
+                        </div> 
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="navigation__slider-container">
+                            <div class="slider__title">Портфолио</div>
+                            <div class="slider__name">НИИ скорой помощи им.  Н.В. Склифосовского</div>
+                            <div class="slider__text">Обфрудование для пищеблоков</div>
+                            <div class="slider__btn">
+                                <a href="#">Подробнее</a>
+                            </div>
+                            <img src="img/slider-foto/slider_1.png" alt="fridge" class="slider__foto">
+                        </div> 
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="navigation__slider-container">
+                            <div class="slider__title">Портфолио</div>
+                            <div class="slider__name">НИИ скорой помощи им.  Н.В. Склифосовского</div>
+                            <div class="slider__text">Обфрудование для пищеблоков</div>
+                            <div class="slider__btn">
+                                <a href="#">Подробнее</a>
+                            </div>
+                            <img src="img/slider-foto/slider_1.png" alt="fridge" class="slider__foto">
+                        </div> 
+                    </div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                
+            
+            </div>
+       
+        <div class="navigation__sale">
+            <div class="navigation__row">
+                <div class="sale__container">
+                    <img src="img/icons/giftbox.png" alt="giftbox">
+                    <div class="sale__text">Самые низкие цены</div>
+                    <div class="sale__title">Распродажа</div>
+                    <a href="#">Каталог распродаж</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sale__mobile">
+    <div class="sale__mobile-container">
+        <div class="navigation__row">
+            <div class="sale__container">
+                <img src="img/icons/giftbox.png" alt="giftbox">
+                <div class="sale__text">Самые низкие цены</div>
+                <div class="sale__title">Распродажа</div>
+                <a href="#">Каталог распродаж</a>
+            </div>
+        </div>
+    </div>
+</div> 
+<div class="brands">
+    <div class="brands__container wrapper ">
+        <ul class="brands__item ">
+            <li>
+                <a href="#">
+                    <img src="img/brands/brands_1.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/brands/brands_2.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/brands/brands_3.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/brands/brands_4.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/brands/brands_5.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Все бренды
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="news wrapper-mini">
+    <div class="news__title">Новости производителей</div>
+    <div class="news__container">
+        <div class="news__article">
+            <div class="article__foto">
+                <a href="#">
+                    <img src="img/news-foto/foto_1.png" alt="news-foto">
+                </a>
+            </div>
+            <div class="article__data">Abat <span> 22.06.17</span></div>
+            <div class="article__title">Новый разборный ротационный пекарский 
+                шкаф РПШ-18-8-6МР
+            </div>
+            <div class="article__text">Новый разборный ротационный пекарский шкаф РПШ-18-8-6МР:  в комплекте тележка-шпилька ТШГ-18 на 18 уровней 600х800 мм вместимость тележки-шпильки - 135 хлебных форм №7
+                инжекционный тип парообразования
+                разборная конструкция увеличенное стекло двери. 
+                Память на 110 программ (до 4-ех этапов в каждой программе)
+                USB-порт. Таймер до 10 ч 
+                Регулировка влажности от 0 до 100%.  5 скоро
+            </div>
+            <div class="article__btn">Все новости</div>
+        </div>
+        <div class="news__list">
+            <div class="list__item">
+                <div class="list__left-foto">
+                    <div class="list__foto">
+                        <img src="img/news-foto/foto_mini-1.png" alt="news">
+                    </div>
+                </div>
+                <div class="list__description">
+                    <div class="list__data">Abat <span> 22.06.17</span></div>
+                    <div class="list__title">Повышение энергоэффективности туннельных посудомоечных машин МПТ торговой марки Abat</div>
+                    <div class="list__text">С целью снижения нагрузки на электрическую сеть и для повышения энергоэффективности изделий с 1 июня 2017 года был изменен алгоритм работы туннельных посудомоечных машин МПТ торговой марки Abat всех моделей... </div>
+                </div>   
+                
+            </div>
+            <div class="list__item">
+                <div class="list__left-foto">
+                    <div class="list__foto">
+                        <img src="img/news-foto/foto_mini-2.png" alt="news">
+                    </div>
+                </div>
+                <div class="list__description">
+                    <div class="list__data">Abat <span> 22.06.17</span></div>
+                    <div class="list__title">Повышение энергоэффективности туннельных посудомоечных машин МПТ торговой марки Abat</div>
+                    <div class="list__text">С целью снижения нагрузки на электрическую сеть и для повышения энергоэффективности изделий с 1 июня 2017 года был изменен алгоритм работы туннельных посудомоечных машин МПТ торговой марки Abat всех моделей... </div>
+                </div>   
+                
+            </div>
+            <div class="list__item">
+                <div class="list__left-foto">
+                    <div class="list__foto">
+                        <img src="img/news-foto/foto_mini-3.png" alt="news">
+                    </div>
+                </div>
+                <div class="list__description">
+                    <div class="list__data">Abat <span> 22.06.17</span></div>
+                    <div class="list__title">Повышение энергоэффективности туннельных посудомоечных машин МПТ торговой марки Abat</div>
+                    <div class="list__text">С целью снижения нагрузки на электрическую сеть и для повышения энергоэффективности изделий с 1 июня 2017 года был изменен алгоритм работы туннельных посудомоечных машин МПТ торговой марки Abat всех моделей... </div>
+                </div>   
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="recommend wrapper-mini">
+    <div class="recommend__title">Рекомендуем</div>
+    <div class="recommend__description">В этих разделах вы можете получить подробную информацию о пищевом оборудовании
+        для столовых, ресторанов и кафе ведущих производителей.</div>
+    <div class="recommend__container">
+        <div class="recommend__combis">
+            <div class="combis__container">
+                <a href="#">
+                    
+                        <div class="combis__description">
+                            <div class="combis__rational">rational</div>
+                            <div class="combis__title">Пароконвектоматы</div>
+                            <div class="combis__text">Педантичность и преданность своему делу делает продукцию Rational идеальной для тех, кто ищет надежность и долговечность.</div>
+                        </div>
+                        <div class="combis__foto-container">
+                            <img src="img/recommend/recommend_1.png" alt="recommend">
+                        </div>
+                   
+                </a>
+            </div>
+
+        </div>
+        <div class="recommend__equipment">
+            <div class="equipment__container">
+                <div class="equipment__row">
+                    <a href="#">
+                        <div class="equipment__description">
+                            <div class="equipment__abat">Abat</div> 
+                            <div class="equipment__title">Тепловое оборудование</div> 
+                            <div class="equipment__text">Более 55 лет успешно работает на рынке торгово-технологического оборудования, по праву занимая лидирующее положение в данном сегменте.</div>
+                        </div>
+                        <div class="equipment__foto-container">
+                            <img src="img/recommend/recommend_2.png" alt="">
+                        </div>
+                    </a> 
+
+            </div>
+                <div class="equipment__row">
+                    <a href="#">
+                        <div class="equipment__description-bottom">
+                            <div class="equipment__hicold">hicold</div> 
+                            <div class="equipment__hicold-title">Холодильные столы</div> 
+                            <div class="equipment__text-hicold">Многофункциональность оборудования позволяет оптимизировать пространство на кухне, сделать работу персонала максимально удобной и эффективной.</div>
+                        </div>
+                        <div class="equipment__foto-containers">
+                            <img src="img/recommend/recommend_3.png" alt="">
+                        </div>
+                    </a>  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="Progress">
+    <div class="Progress__container wrapper-mini">
+        <div class="Progress__articl">
+            <div class="articl__item">
+                <div class="articl__container">
+                    <div class="articl__titile">Комплексные решения оснащения столовых и кафе</div>
+                    <div class="articl__text">
+                        <p>Компания предлагает комплексное оснащение столовых, ресторанов, кафе и баров в Москве. Наши услуги построены по принципу полного цикла обслуживания предприятий общепита и бизнеса HoReCa.</p>
+                        <p>Иными словами, мы предлагаем проектирование «под ключ» и постгарантийное обслуживание. </p>
+                        <p>География работы компании охватывает всю страну. При этом в каждом регионе мы готовы предложить демократичные цены на профессиональное технологическое оборудование для столовой и оптимальные решения с точки зрения эффективности бизнеса, приемлемым уровнем производительности в условиях ограниченного бюджета.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="articl__item">
+                <div class="articl__container">
+                    <div class="articl__titile">Что мы предлагаем</div>
+                    <div class="articl__text">
+                        <p>разработку технологического проекта кухни и производственной линии, дизайна ресторанного интерьера;</p>
+                        <p>составление меню согласно концепции и оснащения бара (кафе, столовой);</p>
+                        <p>одбор посуды, текстиля под общий стиль; профессиональное оборудование для кафе, бара и ресторана, большой выбор современных моделей; доставку в любой регион РФ;</p>
+                        <p>монтажные и пуско-наладочные работы; автоматизацию производственного процесса, что позволяет определённое оборудование для бара;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="progress__btn">+</div>   
+        </div>
+        <div class="Progress__logo">
+            <a href="#">
+                <div class="logo__foto">
+                    <img src="img/icons/logo-top.png" alt="logo-top">
+                </div>
+                <div class="logo__text">Столовая.РУ</div>
+                <div class="logo__text-battom">создание оптимальных пищеблоков</div>
+            </a>
+            <div class="logo__group">Группа компаний</div>
+            <div class="logo__group-bottom">Показатели:</div>
+            <div class="contracts">
+                <p>На рынке: 5 лет</p>
+                <p>Объем контрактов: 4 млрд.р.</p>
+                <p>Количество контрактов: 620</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer__container wrapper-mini">
+            <div class="footer__item">
+                <div class="footer__item-title">Информация</div>
+                <div class="footer__item-container">
+                    <ul>
+                        <li><a href="#">Компания</a></li>
+                        <li><a href="#">Портфолио</a></li>
+                        <li><a href="#">Проектирование</a></li>
+                        <li><a href="#">Ресторанам</a></li>
+                        <li><a href="#">Застройщикам</a></li>
+                        <li><a href="#">Гос.заказчикам</a></li>
+                        <li><a href="#">Таблет-питание </a></li>
+                        <li><a href="#">Сервис </a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Контакты </a></li>
+                    </ul>
+                </div>       
+            </div>
+            <div class="footer__item">
+                <div class="footer__item-title">Оборудование</div>
+                <div class="footer__item-container">
+                    <ul>
+                        <li><a href="#">Тепловое</a></li>
+                        <li><a href="#">Холодильное</a></li>
+                        <li><a href="#">Электромеханическое</a></li>
+                        <li><a href="#">Посудомоечное</a></li>
+                        <li><a href="#">Барное</a></li>
+                        <li><a href="#">Хлебопекарное</a></li>
+                        <li><a href="#">Линии раздачи </a></li>
+                        <li><a href="#">Нейтральное  </a></li>
+                        <li><a href="#">Для фаст фуда </a></li>
+                        <li><a href="#">Для залов </a></li>
+                        <li><a href="#">Весовое</a></li>
+                    </ul>
+                </div>       
+            </div>
+            <div class="footer__item">
+                <div class="footer__item-title">Предложения</div>
+                <div class="footer__item-container">
+                    <ul>
+                        <li><a href="#">Кафе, барам, ресторанам</a></li>
+                        <li><a href="#">Дестким садам и школам</a></li>
+                        <li><a href="#">Таблет-питание</a></li>
+                        <li><a href="#">Для кондитерских</a></li>
+                        <li><a href="#">Для пиццерий</a></li>
+                        <li><a href="#">Для магазинов</a></li>
+                        <li><a href="#">Для воинских частей</a></li>
+                        <li><a href="#">Все предложения</a></li>
+                    </ul>
+                </div>       
+            </div>
+            <div class="footer__item">
+                <div class="footer__item-title">Контакты</div>
+                <div class="footer__item-container">
+                    <ul class="footer__contact">
+                        <li>8 495 150-31-71</li>
+                        <li>8 800 500 43 44</li>
+                        <li>звонок беспланый</li>
+                        <li>Пн-Пт</li>
+                        <li>09:00 до 18:00</li>
+                        <li>com@stolovay.ru</li>
+                        <li>info@stolovay.ru  </li>
+                        <li>111524, Москва, </li>
+                        <li>Рязанский проспект 24к2</li>
+                    </ul>
+                </div>       
+            </div>
+        </div>
+    </div>
+    <div class="footer__container-mobile">
+        <button class="accordion">Информация</button>
+        <div class="panel">
+            <div class="footer__item">
+                <div class="footer__item-container">
+                    <ul>
+                        <li><a href="#">Компания</a></li>
+                        <li><a href="#">Портфолио</a></li>
+                        <li><a href="#">Проектирование</a></li>
+                        <li><a href="#">Ресторанам</a></li>
+                        <li><a href="#">Застройщикам</a></li>
+                        <li><a href="#">Гос.заказчикам</a></li>
+                        <li><a href="#">Таблет-питание </a></li>
+                        <li><a href="#">Сервис </a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Контакты </a></li>
+                    </ul>
+                </div>       
+            </div>
+        </div>
+        <button class="accordion">Оборудование</button>
+        <div class="panel">
+            <div class="footer__item">
+                <div class="footer__item-container">
+                    <ul>
+                        <li><a href="#">Тепловое</a></li>
+                        <li><a href="#">Холодильное</a></li>
+                        <li><a href="#">Электромеханическое</a></li>
+                        <li><a href="#">Посудомоечное</a></li>
+                        <li><a href="#">Барное</a></li>
+                        <li><a href="#">Хлебопекарное</a></li>
+                        <li><a href="#">Линии раздачи </a></li>
+                        <li><a href="#">Нейтральное  </a></li>
+                        <li><a href="#">Для фаст фуда </a></li>
+                        <li><a href="#">Для залов </a></li>
+                        <li><a href="#">Весовое</a></li>
+                    </ul>
+                </div>       
+            </div>
+        </div>
+        <button class="accordion">Предложения</button>
+        <div class="panel">
+            <div class="footer__item">
+                <div class="footer__item-container">
+                    <ul>
+                        <li><a href="#">Кафе, барам, ресторанам</a></li>
+                        <li><a href="#">Дестким садам и школам</a></li>
+                        <li><a href="#">Таблет-питание</a></li>
+                        <li><a href="#">Для кондитерских</a></li>
+                        <li><a href="#">Для пиццерий</a></li>
+                        <li><a href="#">Для магазинов</a></li>
+                        <li><a href="#">Для воинских частей</a></li>
+                        <li><a href="#">Все предложения</a></li>
+                    </ul>
+                </div>       
+            </div>
+        </div>
+        <button class="accordion">Контакты</button>
+        <div class="panel">
+            <div class="footer__item">
+                <div class="footer__item-container">
+                    <ul>
+                        <li>8 495 150-31-71</li>
+                        <li>8 800 500 43 44</li>
+                        <li>звонок беспланый</li>
+                        <li>Пн-Пт</li>
+                        <li>09:00 до 18:00</li>
+                        <li>com@stolovay.ru</li>
+                        <li>info@stolovay.ru  </li>
+                        <li>111524, Москва, </li>
+                        <li>Рязанский проспект 24к2</li>
+                    </ul>
+                </div>       
+            </div>
+        </div>
+        <button class="accordion border">Реквезиты</button>
+        <div class="panel">
+            <div class="footer__item">
+                <div class="footer__item-container">
+                    <ul>
+                        <li>ИНН: 7707083893</li>
+                        <li>КПП: 773601001</li>
+                        <li>Пн-Пт</li>
+                        <li>БИК: 044525225</li>
+                        <li>Почтовый адрес Москва, 117997, ул. Вавилова, д. 19 </li>
+                        <li>Телефакс + 7 (495) 957-57-31, + 7 (495) 747-37-31</li>
+                        <li>Телетайп 114569 SBRF RU </li>
+                        <li>Телекс 414733 SBRF RU </li>
+                    </ul>
+                </div>       
+            </div>
+        </div>
+    </div>   
+    <div class="footer__bottom">
+        <div class="footer__bottom-container wrapper-mini">
+            <div class="footer__bottom-item">
+                <div class="footer__bottom-logo">
+                    <img src="img/icons/logo.png" alt="logo">
+                </div>
+                <div class="footer__bottom-logo">
+                    <div class="footer__logo">Столовая.РУ</div>
+                    <div class="footer__logo-bottom">Создание оптимальных пищеблоков</div>
+                </div>
+            </div>
+            <div class="footer__bottom-item">
+                <div class="footer__bottom-developed">Сайт разработан NTI-systems</div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="script/script.js"></script>
+</body>
+</html>
+
+
+              
+              
+                 
+               
+               
+      
+                
+  
+            
+   
